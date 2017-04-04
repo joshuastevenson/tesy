@@ -26,6 +26,14 @@
   </header>
   <!-- end header -->
 
+  <nav id="toc">
+    <ul>
+      {% for item in site.data.toc.pages %}
+      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
+      {% endfor %}
+    </ul>
+  </nav>
+
   <div class="wrapper">
 
     <section>
@@ -35,13 +43,9 @@
     </section>
 
   </div>
-  <div>
-    <ul>
-      {% for item in site.data.toc.pages %}
-      <li><a href="{{ item.url }}" alt="{{ item.title }}">{{ item.title }}</a></li>
-      {% endfor %}
-    </ul>
-  </div>
+
+
+  <!---->
 
   {% if site.google_analytics %}
   <script type="text/javascript">

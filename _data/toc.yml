@@ -1,0 +1,13 @@
+{
+  pages: [
+    {
+      title: "foo fah",
+      url: "foo"
+
+    },
+    {
+      title: "index",
+      url: "index"
+    }
+  ]
+}
